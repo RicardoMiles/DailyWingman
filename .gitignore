@@ -1,1 +1,4 @@
 *.txt
+src/dist/
+src/build/
+sample
