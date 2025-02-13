@@ -2,8 +2,15 @@
 
 Scripts that makes my life easier 
 
-## Format Vocabulary Bank
+## TOC
+1. [Format Vocabulary Bank](#script1)
+2. [Word Sheet Helper](#script2)
 
+
+
+
+## 1.1 Format Vocabulary Bank
+<a id="script1"></a>
 ### 📚 **Overview**
 
 **Format Vocabulary Bank** is a Python script designed to format vocabulary entries efficiently. It accepts multi-line user input from the command line and applies consistent formatting to text, specifically:
@@ -99,6 +106,78 @@ Banter = playful conversationTrait=unique characteristic
 - Currently optimized for **Windows** only due to `msvcrt` dependency.
 
 - May require slight adjustments for Linux/macOS compatibility.
+
+---
+
+## 1.2 Word Sheet Helper
+<a id="script2"></a>
+### 📚 Overview
+
+Word Sheet Helper is a Python script designed to assist with formatting tables in Microsoft Word documents. Especially tailored for solicitors' document workflows by automatically adjusting table layouts and styles. This tool tackles the problem of incomplete or poorly formatted tables that frequently occur when PDF documents are converted to Word and then processed using machine translation. 
+
+---
+
+### ⚙️ Features
+
+- **Dynamic Row Height Adjustment:** Automatically resizes rows based on text content.
+
+- **Preserves Column Width:** Ensures table structure remains intact while adjusting heights.
+
+- **Batch Processing:** Works on multiple tables within a document.
+
+- **User-Friendly GUI:** Provides a graphical interface for file selection and processing.
+
+---
+
+### 💡 Usage Instructions
+
+Make sure you have installed `python-docx` lib before run this script.
+
+```bash
+pip install python-docx
+```
+
+Or use the [released version](https://github.com/RicardoMiles/DailyWingman/releases/download/Pre-release/Word_Sheet_Helper_CN.exe).
+
+
+1️⃣ **Run the Script**
+
+```bash
+python Word_Sheet_Helper_CN.py # 中文版
+python Word_Sheet_Helper_EN.py # English Version
+```
+
+2️⃣ **Select a Word Document**
+
+- Click the "Select File" button.
+
+- Choose a `.docx` file containing tables that need formatting.
+
+3️⃣ **Processing Begins**
+
+- The script will adjust row heights dynamically.
+
+- A loading animation indicates progress.
+
+4️⃣ **Completion Notification**
+
+- Once processing is complete, a message box will confirm success.
+
+- The formatted document is saved as `original_filename_revised.docx`.
+
+✅ **Example Output:**
+
+- **Before:** Text may be cut off due to inadequate row height.
+
+- **After:** All text is fully visible within each row.
+
+---
+
+### 🚫 Known Issues & Limitations
+
+- Works only with `.docx` format.
+
+- Optimized for Windows; may require testing on macOS/Linux.
 
 ---
 
